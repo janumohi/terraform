@@ -1,4 +1,4 @@
-resource "aws_instance" "JanuServer1" {
+resource "aws_instance" "januserver1" {
   ami = "ami-0603cbe34fd08cb81"
   instance_type = "t2.nano"
 
@@ -10,11 +10,11 @@ resource "aws_instance" "JanuServer1" {
 }
 
 output "myawsserver-ip" {
-  value = aws_instance.myawsserver.public_ip
+  value = aws_instance.januserver1.public_ip
 }
 
 output "myserver-PrivateIP" {
-  value = aws_instance.myawsserver.private_ip
+  value = aws_instance.januserver1.private_ip
 }
 
 
