@@ -1,10 +1,11 @@
-resource "aws_instance" "myawsserver" {
+resource "aws_instance" "JanuServer1" {
   ami = "ami-0603cbe34fd08cb81"
   instance_type = "t2.nano"
 
   tags = {
-    Name = "Gagandeep-aws-ec2-instance-vodafone"
+    Name = "JananiTerrraformServer1throughGithub"
     Env = "test"
+    Application = "SGCAS"
   }
 }
 
